@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteery - Connecting Hearts. Empowering Change.</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', system-ui, sans-serif;
             font-weight: bold;
         }
-        
+
         .arabic {
             font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             direction: rtl;
@@ -24,8 +26,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .float-animation {
@@ -33,8 +42,15 @@
         }
 
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(237, 57, 71, 0.3); }
-            50% { box-shadow: 0 0 30px rgba(237, 57, 71, 0.6); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(237, 57, 71, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(237, 57, 71, 0.6);
+            }
         }
 
         .pulse-glow {
@@ -74,7 +90,7 @@
                 extend: {
                     colors: {
                         'primary-red': '#ed3947',
-                        'primary-blue': '#1d93eb', 
+                        'primary-blue': '#1d93eb',
                         'primary-green': '#8ccb1c',
                         'text-gray': '#3f3f3f'
                     }
@@ -83,6 +99,7 @@
         }
     </script>
 </head>
+
 <body class="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
     <!-- Hero Section -->
     <section class="relative overflow-hidden">
@@ -90,29 +107,39 @@
             <div class="max-w-6xl mx-auto text-center relative z-10">
                 <!-- Decorative elements -->
                 <div class="absolute -top-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-                <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-white/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
-                
-                <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 border-4 border-primary-red" style="box-shadow: 0 0 30px rgba(237, 57, 71, 0.3);">
+                <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-white/10 rounded-full blur-3xl animate-pulse"
+                    style="animation-delay: 2s;"></div>
+
+                <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 border-4 border-primary-red"
+                    style="box-shadow: 0 0 30px rgba(237, 57, 71, 0.3);">
                     <!-- Logo -->
                     <div class="flex items-center justify-center mb-8">
-                            <img src="./volunteeryLogo.png" alt="Volunteery Logo" class="mx-auto aspect-square w-40 object-contain" />
+                        <img src="./resources/volunteeryLogo.png" alt="Volunteery Logo"
+                            class="mx-auto aspect-square w-40 object-contain" />
 
                     </div>
 
                     <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-text-gray">
-                        French Content <br />
+                        Volunteery
+                        <img src="./resources/tunisie.png" alt="Tunisia Flag"
+                            class="w-10 h-8 inline-block align-middle ml-2 rounded-[7px] " />
+                        <br />
                         <span class="text-gradient">
-                            Put platform slogan here.
+                            Pour une Tunisie qui agit.
                         </span>
                     </h2>
 
-                    <p class="text-xl md:text-2xl mb-6 max-w-4xl mx-auto leading-relaxed text-text-gray">
-La première plateforme tunisienne dédiée à la mise en relation des opportunités de bénévolat en Tunisie et dans la région MENA.                    </p>
 
-                    <button class="bg-primary-red text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center border-2 border-white">
+                    <p class="text-xl md:text-2xl mb-6 max-w-4xl mx-auto leading-relaxed text-text-gray">
+                        La première plateforme tunisienne dédiée à la mise en relation des opportunités de bénévolat en
+                        Tunisie et dans la région MENA. </p>
+
+                    <button onclick="document.getElementById('actors').scrollIntoView({ behavior: 'smooth' })"
+                        class="bg-primary-red text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center border-2 border-white">
                         Join the Waitlist
                         <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
                         </svg>
                     </button>
                 </div>
@@ -120,469 +147,602 @@ La première plateforme tunisienne dédiée à la mise en relation des opportuni
         </div>
     </section>
 
-        <!-- Features Section -->
+    <!-- Features Section -->
     <section class="py-20 px-4 bg-gradient-to-r from-blue-50 to-green-50">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
                 <!-- For Associations -->
-                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-red">
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-red">
                     <div class="p-4 bg-primary-red rounded-2xl inline-block mb-6">
-                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6a3 3 0 110-6 3 3 0 010 6zm6 9a3 3 0 110-6 3 3 0 010 6zm-12 0a3 3 0 110-6 3 3 0 010 6zm12 0v3a2 2 0 01-2 2H8a2 2 0 01-2-2v-3m12 0H6m6-9v3" />
                         </svg>
+
                     </div>
-                    <h4 class="text-2xl font-bold mb-4 text-text-gray">For Associations & Clubs</h4>
+                    <h4 class="text-2xl font-bold mb-4 text-text-gray">Pour les Associations et Clubs</h4>
                     <p class="mb-4 leading-relaxed text-text-gray">
-                        Associations, initiatives, and university clubs can share their volunteering offers, reaching motivated individuals ready to take action.
-                    </p>
-                    <p class="arabic leading-relaxed text-text-gray">
-                        يمكن للجمعيات، والمبادرات، والأندية الجامعية نشر فرص التطوع والوصول إلى أشخاص متحمسين للمشاركة
-                    </p>
+                        Associations, initiatives et clubs universitaires peuvent partager leurs offres de bénévolat,
+                        atteignant ainsi des personnes motivées prêtes à passer à l'action. </p>
                 </div>
 
                 <!-- For Young People -->
-                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-blue">
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-blue">
                     <div class="p-4 bg-primary-blue rounded-2xl inline-block mb-6">
-                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-6.5-3.6M12 14l6.5-3.6" />
                         </svg>
+
                     </div>
-                    <h4 class="text-2xl font-bold mb-4 text-text-gray">For Young People</h4>
+                    <h4 class="text-2xl font-bold mb-4 text-text-gray">Pour les jeunes</h4>
                     <p class="mb-4 leading-relaxed text-text-gray">
-                        Young people can discover, apply, and participate in causes that matter to them.
-                    </p>
-                    <p class="arabic leading-relaxed text-text-gray">
-                        يمكن للشباب اكتشاف، والتسجيل، والمشاركة في القضايا التي تهمهم
-                    </p>
+                        Les jeunes peuvent découvrir, postuler et participer à des causes qui leur tiennent à cœur. </p>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stakeholders Section -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold mb-12 text-gray-800">
-      Nous voulons connaître votre avis !
-    </h2>
+    <section id="actors" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">
+                Nous aimerions connaître votre avis ! Quel profil vous correspond le mieux ? </h2>
 
-    <div class="flex flex-col md:flex-row gap-8 justify-center">
-      <!-- Card 1: Volunteers -->
-      <div class="card bg-white border-2 border-red-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
-           onclick="expandCard(this)">
-        <div class="flex items-center gap-4 p-4 md:p-6">
-          <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-          <h3 class="text-xl md:text-2xl font-bold text-red-500 flex-1">Stakeholder type 1</h3>
-          <span class="text-red-500 hidden md:inline transition-transform duration-300">▼</span>
+            <div class="flex flex-col md:flex-row gap-8 justify-center">
+                <!-- Card 1: Volunteers -->
+                <div class="card bg-white border-2 border-red-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
+                    onclick="expandCard(this)">
+                    <div class="flex items-center gap-4 p-4 md:p-6">
+                        <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-6.5-3.6M12 14l6.5-3.6" />
+                        </svg>
+                        <h3 class="text-xl md:text-2xl font-bold text-red-500 flex-1">Associations, clubs et initiatives
+                        </h3>
+                        <span class="text-red-500 hidden md:inline transition-transform duration-300">▼</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: NGOs -->
+                <div class="card bg-white border-2 border-blue-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
+                    onclick="expandCard(this)">
+                    <div class="flex items-center gap-4 p-4 md:p-6">
+                        <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-6.5-3.6M12 14l6.5-3.6" />
+                        </svg>
+                        <h3 class="text-xl md:text-2xl font-bold text-blue-500 flex-1">Étudiants universitaires</h3>
+                        <span class="text-blue-500 hidden md:inline transition-transform duration-300">▼</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Sponsors -->
+                <div class="card bg-white border-2 border-primary-green rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
+                    onclick="expandCard(this)">
+                    <div class="flex items-center gap-4 p-4 md:p-6">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM12 14c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z" />
+                        </svg>
+                        <h3 class="text-xl md:text-2xl font-bold text-primary-green flex-1">Acteurs actifs de la société
+                            civile</h3>
+                        <span class="text-primary-green hidden md:inline transition-transform duration-300">▼</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Card 2: NGOs -->
-      <div class="card bg-white border-2 border-blue-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
-           onclick="expandCard(this)">
-        <div class="flex items-center gap-4 p-4 md:p-6">
-          <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M5 6h14"/>
-          </svg>
-          <h3 class="text-xl md:text-2xl font-bold text-blue-500 flex-1">Stakeholder type 2</h3>
-          <span class="text-blue-500 hidden md:inline transition-transform duration-300">▼</span>
-        </div>
-      </div>
+        <script>
+            const COLLAPSED_HEIGHT = 100;
+            const MAX_SCREEN_RATIO = 0.85;
 
-      <!-- Card 3: Sponsors -->
-      <div class="card bg-white border-2 border-primary-green rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
-           onclick="expandCard(this)">
-        <div class="flex items-center gap-4 p-4 md:p-6">
-          <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM12 14c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z"/>
-          </svg>
-          <h3 class="text-xl md:text-2xl font-bold text-primary-green flex-1">Stakeholder type 3</h3>
-          <span class="text-primary-green hidden md:inline transition-transform duration-300">▼</span>
-        </div>
-      </div>
-    </div>
-  </div>
+            // Card content data
+            const cardData = [
+                {
+                    title: "Associations, clubs et initiatives",
+                    text: "Appel aux associations, initiatives et clubs universitaires ! Rejoignez Volunteery, la première plateforme tunisienne dédiée au bénévolat en Tunisie et dans la région MENA.Pré-enregistrez-vous dès maintenant pour publier vos offres et mobiliser des volontaires motivés !",
+                    link: "https://example.com/survey-volunteers"
+                },
+                {
+                    title: "Étudiants universitaires",
+                    text: " Devenez Ambassadeur·rice Volunteery Vie Associative et représentez la première plateforme tunisienne de bénévolat dans votre université en enregistrant les clubs et associations étudiantes, en valorisant le bénévolat sur le campus et en connectant les étudiants aux opportunités.",
+                    link: "https://example.com/survey-ngos"
+                },
+                {
+                    title: "Acteurs actifs de la société civile",
+                    text: "Devenez Ambassadeur·rice Volunteery pour la société civile et rejoignez la première plateforme tunisienne de bénévolat en représentant votre gouvernorat, en enregistrant les associations et initiatives locales, en valorisant la culture du bénévolat et en connectant les acteurs du changement dans votre communauté",
+                    link: "https://example.com/survey-sponsors"
+                }
+            ];
 
-  <script>
-    const COLLAPSED_HEIGHT = 100;
-    const MAX_SCREEN_RATIO = 0.85;
+            function expandCard(card) {
+                const cards = document.querySelectorAll('.card');
+                const viewportHeight = window.innerHeight;
 
-    // Card content data
-    const cardData = [
-      {
-        title: "Stakeholder 1",
-        text: "Partagez vos préférences et besoins pour améliorer votre expérience de bénévolat.",
-        link: "https://example.com/survey-volunteers"
-      },
-      {
-        title: "Stakeholder 2",
-        text: "Donnez-nous votre retour sur les fonctionnalités et outils pour mieux gérer vos projets.",
-        link: "https://example.com/survey-ngos"
-      },
-      {
-        title: "Stakeholder 3",
-        text: "Partagez votre vision et vos attentes pour soutenir le bénévolat dans la région.",
-        link: "https://example.com/survey-sponsors"
-      }
-    ];
+                cards.forEach((c, index) => {
+                    const content = c.querySelector('.content');
+                    const arrow = c.querySelector('span');
 
-    function expandCard(card) {
-      const cards = document.querySelectorAll('.card');
-      const viewportHeight = window.innerHeight;
+                    if (c !== card) {
+                        // Collapse other cards
+                        c.style.height = COLLAPSED_HEIGHT + 'px';
+                        if (content) content.remove();
+                        if (arrow) arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
 
-      cards.forEach((c, index) => {
-        const content = c.querySelector('.content');
-        const arrow = c.querySelector('span');
+                const arrow = card.querySelector('span');
+                const existingContent = card.querySelector('.content');
+                const isExpanded = !!existingContent;
 
-        if (c !== card) {
-          // Collapse other cards
-          c.style.height = COLLAPSED_HEIGHT + 'px';
-          if(content) content.remove();
-          if(arrow) arrow.style.transform = 'rotate(0deg)';
-        }
-      });
+                if (isExpanded) {
+                    // Collapse
+                    card.style.height = COLLAPSED_HEIGHT + 'px';
+                    existingContent.remove();
+                    if (arrow) arrow.style.transform = 'rotate(0deg)';
+                } else {
+                    // Inject content dynamically
+                    const index = Array.from(cards).indexOf(card);
+                    const data = cardData[index];
 
-      const arrow = card.querySelector('span');
-      const existingContent = card.querySelector('.content');
-      const isExpanded = !!existingContent;
-
-      if(isExpanded) {
-        // Collapse
-        card.style.height = COLLAPSED_HEIGHT + 'px';
-        existingContent.remove();
-        if(arrow) arrow.style.transform = 'rotate(0deg)';
-      } else {
-        // Inject content dynamically
-        const index = Array.from(cards).indexOf(card);
-        const data = cardData[index];
-
-        const contentDiv = document.createElement('div');
-        contentDiv.className = "content px-4 md:px-6 pb-4 md:pb-6 text-gray-700 transition-all duration-500";
-        contentDiv.innerHTML = `
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = "content px-4 md:px-6 pb-4 md:pb-6 text-gray-700 transition-all duration-500";
+                    contentDiv.innerHTML = `
           <p class="mb-4 text-sm md:text-base">${data.text}</p>
           <a href="${data.link}" target="_blank" class="text-blue-500 font-semibold hover:underline text-sm md:text-base">
             Remplir le sondage
           </a>
         `;
-        card.appendChild(contentDiv);
+                    card.appendChild(contentDiv);
 
-        // Use requestAnimationFrame to ensure DOM is updated before measuring
-        requestAnimationFrame(() => {
-          const contentHeight = contentDiv.scrollHeight;
-          let totalHeight = COLLAPSED_HEIGHT + contentHeight;
-          if(totalHeight > viewportHeight * MAX_SCREEN_RATIO) {
-            totalHeight = viewportHeight * MAX_SCREEN_RATIO;
-          }
-          card.style.height = totalHeight + 'px';
-          if(arrow) arrow.style.transform = 'rotate(180deg)';
+                    // Use requestAnimationFrame to ensure DOM is updated before measuring
+                    requestAnimationFrame(() => {
+                        const contentHeight = contentDiv.scrollHeight;
+                        let totalHeight = COLLAPSED_HEIGHT + contentHeight;
+                        if (totalHeight > viewportHeight * MAX_SCREEN_RATIO) {
+                            totalHeight = viewportHeight * MAX_SCREEN_RATIO;
+                        }
+                        card.style.height = totalHeight + 'px';
+                        if (arrow) arrow.style.transform = 'rotate(180deg)';
+                    });
+                }
+            }
+
+            // Initialize card heights
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.card').forEach(c => c.style.height = COLLAPSED_HEIGHT + 'px');
+            });
+        </script>
+
+        <style>
+            .card {
+                transition: height 0.5s ease-in-out;
+            }
+        </style>
+    </section>
+
+    <!-- Section for carousel  -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="relative w-full flex items-center justify-center">
+                <!-- Prev Button -->
+                <button id="carousel-prev"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary-red text-white p-3 shadow-lg hover:bg-primary-blue transition-all duration-300 z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <!-- Carousel Images -->
+                <div class="w-full overflow-hidden">
+                    <div id="carousel-images" class="flex gap-6 transition-transform duration-700 ease-in-out"></div>
+                </div>
+
+                <!-- Next Button -->
+                <button id="carousel-next"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary-red text-white p-3 shadow-lg hover:bg-primary-blue transition-all duration-300 z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Dots -->
+            <div class="mt-6 flex justify-center gap-2" id="carousel-dots"></div>
+        </div>
+
+        <script>
+            const images = [
+                "./resources/posts/post1.png",
+                "./resources/posts/post2.png",
+                "./resources/posts/post3.png",
+                "./resources/posts/post4.png",
+                "./resources/posts/post5.png",
+            ];
+
+            const visibleImagesByScreen = () => {
+                if (window.innerWidth < 640) return 1; // mobile
+                if (window.innerWidth < 1024) return 2; // tablet
+                return 3; // desktop
+            };
+
+            let visibleImages = visibleImagesByScreen();
+            let currentIndex = 0;
+            let isSliding = false;
+
+            const imagesEl = document.getElementById('carousel-images');
+            const dotsEl = document.getElementById('carousel-dots');
+
+            window.addEventListener('resize', () => {
+                visibleImages = visibleImagesByScreen();
+                showImages(currentIndex);
+            });
+
+            function getImageSet(startIdx) {
+                let set = [];
+                for (let i = 0; i < visibleImages; i++) {
+                    const imgIdx = (startIdx + i) % images.length;
+                    set.push(`<img src="${images[imgIdx]}" class="w-[500px] md:w-[400px] h-[300px] object-cover shadow-xl" alt="Carousel ${imgIdx + 1}">`);
+                }
+                return set.join('');
+            }
+
+            function updateDots() {
+                const dotIndex = Math.floor(currentIndex / visibleImages) % Math.ceil(images.length / visibleImages);
+                dotsEl.innerHTML = Array.from({ length: Math.ceil(images.length / visibleImages) }, (_, i) =>
+                    `<span class="inline-block w-3 h-3 rounded-full mx-1 ${i === dotIndex ? 'bg-primary-red' : 'bg-gray-300'}"></span>`
+                ).join('');
+            }
+
+            function renderImages(current, next, direction) {
+                const slideWidth = imagesEl.clientWidth;
+
+                const currentSlide = document.createElement('div');
+                currentSlide.className = 'flex gap-6 w-full shrink-0';
+                currentSlide.innerHTML = getImageSet(current);
+
+                const nextSlide = document.createElement('div');
+                nextSlide.className = 'flex gap-6 w-full shrink-0';
+                nextSlide.innerHTML = getImageSet(next);
+
+                imagesEl.innerHTML = '';
+                imagesEl.style.display = 'flex';
+                imagesEl.style.transition = 'none';
+                imagesEl.style.transform = `translateX(${direction === 1 ? 0 : -slideWidth}px)`;
+
+                if (direction === 1) {
+                    imagesEl.appendChild(currentSlide);
+                    imagesEl.appendChild(nextSlide);
+                } else {
+                    imagesEl.appendChild(nextSlide);
+                    imagesEl.appendChild(currentSlide);
+                }
+
+                void imagesEl.offsetWidth;
+
+                imagesEl.style.transition = 'transform 0.7s ease';
+                imagesEl.style.transform = `translateX(${direction === 1 ? -slideWidth : 0}px)`;
+
+                isSliding = true;
+
+                setTimeout(() => {
+                    imagesEl.style.transition = 'none';
+                    imagesEl.style.transform = 'translateX(0)';
+                    imagesEl.innerHTML = '';
+                    imagesEl.appendChild(nextSlide);
+                    isSliding = false;
+                }, 710); // match transition duration
+            }
+
+            function showImages(index, direction = 0) {
+                let nextIndex;
+                if (direction === 1) {
+                    nextIndex = (index + visibleImages) % images.length;
+                    renderImages(index, nextIndex, 1);
+                    currentIndex = nextIndex;
+                } else if (direction === -1) {
+                    nextIndex = (index - visibleImages + images.length) % images.length;
+                    renderImages(index, nextIndex, -1);
+                    currentIndex = nextIndex;
+                } else {
+                    imagesEl.innerHTML = '';
+                    const slide = document.createElement('div');
+                    slide.className = 'flex gap-6 w-full shrink-0';
+                    slide.innerHTML = getImageSet(index);
+                    imagesEl.appendChild(slide);
+                }
+                updateDots();
+            }
+
+            document.getElementById('carousel-prev').onclick = function () {
+                if (isSliding) return;
+                showImages(currentIndex, -1);
+            };
+            document.getElementById('carousel-next').onclick = function () {
+                if (isSliding) return;
+                showImages(currentIndex, 1);
+            };
+
+            // Auto-slide every 5 seconds
+            setInterval(() => {
+                if (isSliding) return;
+                showImages(currentIndex, 1);
+            }, 5000);
+
+            showImages(currentIndex);
+        </script>
+    </section>
+
+
+    <!-- Coming Soon Section -->
+    <section class="py-20 px-4 bg-gradient-to-br from-red-50 to-blue-50 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <img src="./resources/volunteeryLogo.png" alt="Volunteery Logo"
+                class="mx-auto aspect-square w-40 object-contain" />
+            <!-- Under Construction Animation -->
+            <div class="under-construction mb-6 font-bold text-xl md:text-2xl text-primary-red animate-pulse">
+                🚧 Site en Construction 🚧
+            </div>
+
+            <!-- Launch Date -->
+            <p class="text-lg md:text-xl mb-8 text-text-gray">
+                Lancement le <span id="launch-date" class="font-bold text-primary-red"></span>
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12" id="countdown">
+                <div class="text-white p-6 rounded-2xl timer-gradient-1">
+                    <div class="text-3xl md:text-4xl font-bold mb-2" id="days">0</div>
+                    <div class="text-sm md:text-base opacity-90">Jours</div>
+                </div>
+                <div class="text-white p-6 rounded-2xl timer-gradient-2">
+                    <div class="text-3xl md:text-4xl font-bold mb-2" id="hours">0</div>
+                    <div class="text-sm md:text-base opacity-90">Heures</div>
+                </div>
+                <div class="text-white p-6 rounded-2xl timer-gradient-3">
+                    <div class="text-3xl md:text-4xl font-bold mb-2" id="minutes">0</div>
+                    <div class="text-sm md:text-base opacity-90">Minutes</div>
+                </div>
+                <div class="text-white p-6 rounded-2xl timer-gradient-4">
+                    <div class="text-3xl md:text-4xl font-bold mb-2" id="seconds">0</div>
+                    <div class="text-sm md:text-base opacity-90">Secondes</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const launchDate = new Date("September 1, 2025 00:00:00").getTime();
+
+            document.getElementById("launch-date").innerText = new Date(launchDate).toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            });
+
+            function updateCountdown() {
+                const now = Date.now();
+                const distance = launchDate - now;
+
+                if (distance <= 0) {
+                    document.getElementById("countdown").innerHTML =
+                        "<p class='col-span-4 text-xl font-bold text-text-gray'>Launched!</p>";
+                    clearInterval(countdownInterval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+            }
+
+            const countdownInterval = setInterval(updateCountdown, 1000);
+            updateCountdown();
+        </script>
+
+        <style>
+            /* Waving emoji effect */
+            @keyframes wave {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                15% {
+                    transform: rotate(15deg);
+                }
+
+                30% {
+                    transform: rotate(-10deg);
+                }
+
+                45% {
+                    transform: rotate(15deg);
+                }
+
+                60% {
+                    transform: rotate(-10deg);
+                }
+
+                75% {
+                    transform: rotate(15deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+
+            .under-construction {
+                display: inline-block;
+            }
+
+            .under-construction::before,
+            .under-construction::after {
+                display: inline-block;
+                animation: wave 2s infinite;
+            }
+
+            .under-construction::before {
+                content: "🚧 ";
+            }
+
+            .under-construction::after {
+                content: " 🚧";
+            }
+        </style>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-text-gray mb-4">Notre Equipe</h2>
+            <p class="text-gray-500">Rencontrez notre équipe passionnée.</p>
+        </div>
+
+        <!-- Gallery Container -->
+        <div id="gallery" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <!-- First row of images (fully visible) -->
+            <div class="overflow-hidden rounded-2xl relative group">
+                <img src="./resources/team/team1.jpeg" alt="Gallery Image 1"
+                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+
+            <div class="overflow-hidden rounded-2xl relative group">
+                <img src="./resources/team/team2.jpeg" alt="Gallery Image 2"
+                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+
+            <div class="overflow-hidden rounded-2xl relative group">
+                <img src="./resources/team/team3.jpeg" alt="Gallery Image 3"
+                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+        </div>
+
+        <!-- Show All Button -->
+        <div class="mt-8 text-center relative">
+            <button id="showAllBtn"
+                class="px-6 py-2 bg-primary-red text-white rounded-full hover:bg-red-600 transition-colors duration-300">
+                Afficher toutes les photos de l'équipe </button>
+        </div>
+    </section>
+
+    <script>
+        const showAllBtn = document.getElementById('showAllBtn');
+        const gallery = document.getElementById('gallery');
+
+        const extraImages = [
+            "./resources/team/team4.jpeg", "./resources/team/team5.jpeg", "./resources/team/team6.jpeg",
+            "./resources/team/team7.jpeg", "./resources/team/team8.jpeg", "./resources/team/team9.jpeg",
+            "./resources/team/team10.jpeg", "./resources/team/team11.jpeg"
+        ];
+
+        showAllBtn.addEventListener('click', () => {
+            extraImages.forEach(src => {
+                const div = document.createElement('div');
+                div.className = 'overflow-hidden rounded-2xl relative group opacity-0 transition-opacity duration-500';
+
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = 'Gallery Image';
+                img.className = 'w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105';
+
+                div.appendChild(img);
+                gallery.appendChild(div);
+
+                // Fade-in effect
+                setTimeout(() => div.classList.remove('opacity-0'), 50);
+            });
+
+            showAllBtn.style.display = 'none'; // hide the button
         });
-      }
-    }
-
-    // Initialize card heights
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.card').forEach(c => c.style.height = COLLAPSED_HEIGHT + 'px');
-    });
-  </script>
-
-  <style>
-    .card {
-      transition: height 0.5s ease-in-out;
-    }
-  </style>
-</section>
-
-
- <!-- Section for carousel  -->
-<section class="py-20 px-4 bg-white">
-  <div class="max-w-6xl mx-auto text-center">
-    <div class="relative w-full flex items-center justify-center">
-      <!-- Prev Button -->
-      <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary-red text-white p-3 shadow-lg hover:bg-primary-blue transition-all duration-300 z-10">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-        </svg>
-      </button>
-
-      <!-- Carousel Images -->
-      <div class="w-full overflow-hidden">
-        <div id="carousel-images" class="flex gap-6 transition-transform duration-700 ease-in-out"></div>
-      </div>
-
-      <!-- Next Button -->
-      <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary-red text-white p-3 shadow-lg hover:bg-primary-blue transition-all duration-300 z-10">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Dots -->
-    <div class="mt-6 flex justify-center gap-2" id="carousel-dots"></div>
-  </div>
-
-  <script>
-    const images = [
-      "./post.png",
-      "./post.png",
-      "./post.png",
-      "./post.png",
-      "./post.png",
-      "./post.png",
-    ];
-
-    const visibleImagesByScreen = () => {
-      if(window.innerWidth < 640) return 1; // mobile
-      if(window.innerWidth < 1024) return 2; // tablet
-      return 3; // desktop
-    };
-
-    let visibleImages = visibleImagesByScreen();
-    let currentIndex = 0;
-    let isSliding = false;
-
-    const imagesEl = document.getElementById('carousel-images');
-    const dotsEl = document.getElementById('carousel-dots');
-
-    window.addEventListener('resize', () => {
-      visibleImages = visibleImagesByScreen();
-      showImages(currentIndex);
-    });
-
-    function getImageSet(startIdx) {
-      let set = [];
-      for (let i = 0; i < visibleImages; i++) {
-        const imgIdx = (startIdx + i) % images.length;
-        set.push(`<img src="${images[imgIdx]}" class="w-[500px] md:w-[400px] h-[300px] object-cover shadow-xl" alt="Carousel ${imgIdx+1}">`);
-      }
-      return set.join('');
-    }
-
-    function updateDots() {
-      const dotIndex = Math.floor(currentIndex / visibleImages) % Math.ceil(images.length / visibleImages);
-      dotsEl.innerHTML = Array.from({length: Math.ceil(images.length / visibleImages)}, (_, i) =>
-        `<span class="inline-block w-3 h-3 rounded-full mx-1 ${i === dotIndex ? 'bg-primary-red' : 'bg-gray-300'}"></span>`
-      ).join('');
-    }
-
-    function renderImages(current, next, direction) {
-      const slideWidth = imagesEl.clientWidth;
-
-      const currentSlide = document.createElement('div');
-      currentSlide.className = 'flex gap-6 w-full shrink-0';
-      currentSlide.innerHTML = getImageSet(current);
-
-      const nextSlide = document.createElement('div');
-      nextSlide.className = 'flex gap-6 w-full shrink-0';
-      nextSlide.innerHTML = getImageSet(next);
-
-      imagesEl.innerHTML = '';
-      imagesEl.style.display = 'flex';
-      imagesEl.style.transition = 'none';
-      imagesEl.style.transform = `translateX(${direction === 1 ? 0 : -slideWidth}px)`;
-
-      if (direction === 1) {
-        imagesEl.appendChild(currentSlide);
-        imagesEl.appendChild(nextSlide);
-      } else {
-        imagesEl.appendChild(nextSlide);
-        imagesEl.appendChild(currentSlide);
-      }
-
-      void imagesEl.offsetWidth;
-
-      imagesEl.style.transition = 'transform 0.7s ease';
-      imagesEl.style.transform = `translateX(${direction === 1 ? -slideWidth : 0}px)`;
-
-      isSliding = true;
-
-      setTimeout(() => {
-        imagesEl.style.transition = 'none';
-        imagesEl.style.transform = 'translateX(0)';
-        imagesEl.innerHTML = '';
-        imagesEl.appendChild(nextSlide);
-        isSliding = false;
-      }, 710); // match transition duration
-    }
-
-    function showImages(index, direction = 0) {
-      let nextIndex;
-      if (direction === 1) {
-        nextIndex = (index + visibleImages) % images.length;
-        renderImages(index, nextIndex, 1);
-        currentIndex = nextIndex;
-      } else if (direction === -1) {
-        nextIndex = (index - visibleImages + images.length) % images.length;
-        renderImages(index, nextIndex, -1);
-        currentIndex = nextIndex;
-      } else {
-        imagesEl.innerHTML = '';
-        const slide = document.createElement('div');
-        slide.className = 'flex gap-6 w-full shrink-0';
-        slide.innerHTML = getImageSet(index);
-        imagesEl.appendChild(slide);
-      }
-      updateDots();
-    }
-
-    document.getElementById('carousel-prev').onclick = function() {
-      if (isSliding) return;
-      showImages(currentIndex, -1);
-    };
-    document.getElementById('carousel-next').onclick = function() {
-      if (isSliding) return;
-      showImages(currentIndex, 1);
-    };
-
-    // Auto-slide every 5 seconds
-    setInterval(() => {
-      if (isSliding) return;
-      showImages(currentIndex, 1);
-    }, 5000);
-
-    showImages(currentIndex);
-  </script>
-</section>
-
-
-<!-- Coming Soon Section -->
-<section class="py-20 px-4 bg-gradient-to-br from-red-50 to-blue-50">
-  <div class="max-w-4xl mx-auto text-center">
-    <div class="p-4 rounded-full inline-block mb-4" style="background-color: rgba(140, 203, 28, 0.1);">
-      <svg class="w-16 h-16 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-      </svg>
-    </div>
-
-    <h3 class="text-3xl md:text-4xl font-bold mb-2 text-text-gray">Coming Soon</h3>
-
-    <!-- Launch Date -->
-    <p class="text-lg md:text-xl mb-8 text-text-gray">
-      Launching on <span id="launch-date" class="font-bold text-primary-red"></span>
-    </p>
-
-    <!-- Countdown Timer -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12" id="countdown">
-      <div class="text-white p-6 rounded-2xl timer-gradient-1">
-        <div class="text-3xl md:text-4xl font-bold mb-2" id="days">0</div>
-        <div class="text-sm md:text-base opacity-90">Days</div>
-      </div>
-      <div class="text-white p-6 rounded-2xl timer-gradient-2">
-        <div class="text-3xl md:text-4xl font-bold mb-2" id="hours">0</div>
-        <div class="text-sm md:text-base opacity-90">Hours</div>
-      </div>
-      <div class="text-white p-6 rounded-2xl timer-gradient-3">
-        <div class="text-3xl md:text-4xl font-bold mb-2" id="minutes">0</div>
-        <div class="text-sm md:text-base opacity-90">Minutes</div>
-      </div>
-      <div class="text-white p-6 rounded-2xl timer-gradient-4">
-        <div class="text-3xl md:text-4xl font-bold mb-2" id="seconds">0</div>
-        <div class="text-sm md:text-base opacity-90">Seconds</div>
-      </div>
-    </div>
-  </div>
-  <script>
-  const launchDate = new Date("September 1, 2025 00:00:00").getTime();
-
-  // Set launch date text
-  document.getElementById("launch-date").innerText = new Date(launchDate).toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-  });
-
-  function updateCountdown() {
-    const now = Date.now();
-    const distance = launchDate - now;
-
-    if (distance <= 0) {
-      document.getElementById("countdown").innerHTML =
-        "<p class='col-span-4 text-xl font-bold text-text-gray'>Launched!</p>";
-      clearInterval(countdownInterval);
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("days").innerText = days;
-    document.getElementById("hours").innerText = hours;
-    document.getElementById("minutes").innerText = minutes;
-    document.getElementById("seconds").innerText = seconds;
-  }
-
-  const countdownInterval = setInterval(updateCountdown, 1000);
-  updateCountdown();
-</script>
-</section>
-
-
+    </script>
 
     <!-- Footer -->
     <footer class="relative text-white py-16 px-4 overflow-hidden bg-text-gray">
-        
+
         <div class="max-w-6xl mx-auto text-center">
             <div class="flex items-center justify-center mb-8">
-                <div class="h-12 w-40 bg-primary-red rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                <div
+                    class="h-12 w-40 bg-primary-red rounded-lg flex items-center justify-center text-white text-xl font-bold">
                     Volunteery
                 </div>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8 mb-12 relative z-10">
                 <div>
                     <h5 class="font-bold text-lg mb-4 text-primary-red">Contact</h5>
-                    <p class="text-gray-300">hello@volunteery.tn</p>
+                    <p class="text-gray-300">tobbymohamedali@gmail.com</p>
                 </div>
-                
                 <div>
                     <h5 class="font-bold text-lg mb-4 text-primary-red">Follow Us</h5>
                     <div class="flex justify-center space-x-6">
-                        <a href="#" class="text-gray-300 hover:text-primary-red transition-colors duration-300">
-                            <svg class="w-6 h-6 text-primary-red" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.024-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.219-.359-1.219c0-1.14.662-1.219 1.453-1.219.219 0 .379.219.379.657 0 .438-.219 1.094-.359 1.699-.199.877.44 1.578 1.299 1.578 1.561 0 2.765-1.641 2.765-4.017 0-2.099-1.5-3.565-3.662-3.565-2.496 0-3.965 1.875-3.965 3.81 0 .766.295 1.587.662 2.042.073.089.084.167.062.257-.067.281-.218.895-.247 1.023-.04.167-.132.202-.305.122-1.156-.54-1.781-1.781-1.781-3.565 0-2.735 1.988-5.248 5.731-5.248 3.018 0 5.248 2.152 5.248 5.031 0 3.004-1.895 5.418-4.517 5.418-.881 0-1.711-.459-1.992-1.006 0 0-.437 1.664-.544 2.081-.197.766-.73 1.724-1.087 2.310.818.254 1.684.389 2.587.389 6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.017.001z"/>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/company/volunteery/"
+                            class="text-gray-300 hover:text-blue-700 transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.08 20.45H3.56V9h3.52v11.45zM5.32 7.43a2.04 2.04 0 110-4.08 2.04 2.04 0 010 4.08zM20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.44-2.14 2.94v5.67h-3.55V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28z" />
                             </svg>
                         </a>
-                        <a href="#" class="text-gray-300 hover:text-primary-blue transition-colors duration-300">
-                            <svg class="w-6 h-6 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/volun.teery?igsh=djBjcXdvdmx0YWh1"
+                            class="text-gray-300 hover:text-pink-500 transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.16c3.2 0 3.584.012 4.85.07 1.17.054 1.96.24 2.417.403a4.92 4.92 0 011.787 1.164 4.92 4.92 0 011.164 1.788c.163.457.35 1.246.404 2.416.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.96-.403 2.417a4.934 4.934 0 01-1.164 1.787 4.934 4.934 0 01-1.788 1.164c-.457.163-1.246.35-2.416.404-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.96-.24-2.417-.403a4.92 4.92 0 01-1.787-1.164 4.92 4.92 0 01-1.164-1.788c-.163-.457-.35-1.246-.404-2.416C2.172 15.584 2.16 15.2 2.16 12s.012-3.584.07-4.85c.054-1.17.24-1.96.403-2.417a4.934 4.934 0 011.164-1.787 4.934 4.934 0 011.788-1.164c.457-.163 1.246-.35 2.416-.404C8.416 2.172 8.8 2.16 12 2.16zm0-2.16C8.736 0 8.332.013 7.052.072 5.773.13 4.785.326 4.012.58a7.07 7.07 0 00-2.563 1.626A7.07 7.07 0 00.58 4.012c-.254.773-.45 1.761-.508 3.04C.013 8.332 0 8.736 0 12s.013 3.668.072 4.948c.058 1.279.254 2.267.508 3.04a7.07 7.07 0 001.626 2.563 7.07 7.07 0 002.563 1.626c.773.254 1.761.45 3.04.508C8.332 23.987 8.736 24 12 24s3.668-.013 4.948-.072c1.279-.058 2.267-.254 3.04-.508a7.07 7.07 0 002.563-1.626 7.07 7.07 0 001.626-2.563c.254-.773.45-1.761.508-3.04.058-1.28.072-1.684.072-4.948s-.013-3.668-.072-4.948c-.058-1.279-.254-2.267-.508-3.04a7.07 7.07 0 00-1.626-2.563A7.07 7.07 0 0019.988.58c-.773-.254-1.761-.45-3.04-.508C15.668.013 15.264 0 12 0z" />
+                                <path
+                                    d="M12 5.838A6.162 6.162 0 105.838 12 6.162 6.162 0 0012 5.838zm0 10.162a3.999 3.999 0 113.999-3.999A4 4 0 0112 16z" />
+                                <circle cx="18.406" cy="5.594" r="1.44" />
                             </svg>
                         </a>
-                        <a href="#" class="text-gray-300 hover:text-primary-green transition-colors duration-300">
-                            <svg class="w-6 h-6 text-primary-green" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/share/1FVA8MTtid/?mibextid=wwXIfr"
+                            class="text-gray-300 hover:text-blue-600 transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.675 0z" />
                             </svg>
                         </a>
                     </div>
                 </div>
-                
                 <div>
                     <h5 class="font-bold text-lg mb-4 text-primary-red">Location</h5>
                     <div class="flex items-center justify-center text-gray-300">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                         <span>Tunisia</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-600 pt-8 relative z-10">
-                <p class="text-gray-400 flex items-center justify-center">
-                    Made with 
-                    <svg class="w-4 h-4 mx-2 text-primary-red" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    in Tunisia
+                <p class="text-gray-400 flex items-center justify-center space-x-2">
+                    <span>Made in Tunisia</span>
+                    <img src="./resources/tunisie.png" alt="Tunisia Flag" class="w-6 h-6 object-contain" />
                 </p>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>
