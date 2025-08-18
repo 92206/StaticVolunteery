@@ -1,0 +1,164 @@
+/* Component styles - Reusable UI components */
+
+/* Hero Section */
+.hero-gradient {
+    background: linear-gradient(135deg, #ed3947 0%, #1d93eb 50%, #ed3947 100%);
+}
+
+.hero-card {
+    box-shadow: 0 0 30px rgba(237, 57, 71, 0.3);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #ed3947 0%, #1d93eb 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.cta-button {
+    @apply bg-primary-red text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center border-2 border-white;
+}
+
+/* Icon containers */
+.icon-container {
+    @apply p-4 rounded-full inline-block;
+}
+
+.icon-container-red {
+    background-color: rgba(237, 57, 71, 0.1);
+}
+
+.icon-container-blue {
+    background-color: rgba(29, 147, 235, 0.1);
+}
+
+.icon-container-green {
+    background-color: rgba(140, 203, 28, 0.1);
+}
+
+/* Feature cards */
+.feature-card {
+    @apply bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4;
+}
+
+.feature-card-red {
+    @apply border-primary-red;
+}
+
+.feature-card-blue {
+    @apply border-primary-blue;
+}
+
+.feature-icon {
+    @apply p-4 rounded-2xl inline-block mb-6;
+}
+
+.feature-icon-red {
+    @apply bg-primary-red;
+}
+
+.feature-icon-blue {
+    @apply bg-primary-blue;
+}
+
+/* Countdown timer */
+.countdown-container {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-4 mb-12;
+}
+
+.countdown-item {
+    @apply text-white p-6 rounded-2xl transform hover:scale-105 transition-all duration-300;
+}
+
+.countdown-item-1 {
+    background: linear-gradient(135deg, #ed3947 0%, #1d93eb 100%);
+}
+
+.countdown-item-2 {
+    background: linear-gradient(135deg, #1d93eb 0%, #8ccb1c 100%);
+}
+
+.countdown-item-3 {
+    background: linear-gradient(135deg, #8ccb1c 0%, #ed3947 100%);
+}
+
+.countdown-item-4 {
+    background: linear-gradient(135deg, #ed3947 0%, #8ccb1c 100%);
+}
+
+.countdown-number {
+    @apply text-3xl md:text-4xl font-bold mb-2;
+}
+
+.countdown-label {
+    @apply text-sm md:text-base opacity-90;
+}
+
+/* Email subscription */
+.email-subscription-container {
+    @apply bg-white p-8 rounded-3xl shadow-lg border-2 border-primary-red;
+}
+
+.email-subscription-text {
+    @apply text-xl mb-6 text-text-gray;
+}
+
+.email-form {
+    @apply max-w-md mx-auto;
+}
+
+.email-input {
+    @apply w-full px-6 py-4 rounded-full border-2 border-primary-red focus:border-primary-blue focus:outline-none text-lg font-bold text-text-gray;
+}
+
+.email-submit-button {
+    @apply bg-primary-red text-white px-8 py-4 rounded-full font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center;
+}
+
+.success-message {
+    @apply border-2 border-primary-green rounded-full p-6 inline-flex items-center font-bold text-primary-green;
+    background-color: rgba(140, 203, 28, 0.1);
+}
+
+/* Footer */
+.footer {
+    @apply relative text-white py-16 px-4 overflow-hidden bg-text-gray;
+}
+
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'><text x='100' y='60' text-anchor='middle' fill='white' font-size='24' font-family='Poppins'>Volunteery</text></svg>");
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-logo {
+    @apply h-12 w-40 bg-primary-red rounded-lg flex items-center justify-center text-white text-xl font-bold;
+}
+
+.footer-section-title {
+    @apply font-bold text-lg mb-4 text-primary-red;
+}
+
+.social-link {
+    @apply text-gray-300 transition-colors duration-300;
+}
+
+.social-link-red:hover {
+    @apply text-primary-red;
+}
+
+.social-link-blue:hover {
+    @apply text-primary-blue;
+}
+
+.social-link-green:hover {
+    @apply text-primary-green;
+}

@@ -1,0 +1,65 @@
+/* Main CSS - Base styles and typography */
+
+/* Base styles */
+body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: bold;
+}
+
+/* Arabic font support */
+.arabic {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tailwind configuration - Custom colors */
+:root {
+    --primary-red: #ed3947;
+    --primary-blue: #1d93eb;
+    --primary-green: #8ccb1c;
+    --text-gray: #3f3f3f;
+}
+
+/* Color utilities using CSS custom properties */
+.text-primary-red { color: var(--primary-red); }
+.text-primary-blue { color: var(--primary-blue); }
+.text-primary-green { color: var(--primary-green); }
+.text-text-gray { color: var(--text-gray); }
+.bg-primary-red { background-color: var(--primary-red); }
+.bg-primary-blue { background-color: var(--primary-blue); }
+.bg-primary-green { background-color: var(--primary-green); }
+.bg-text-gray { background-color: var(--text-gray); }
+.border-primary-red { border-color: var(--primary-red); }
+.border-primary-blue { border-color: var(--primary-blue); }
+.border-primary-green { border-color: var(--primary-green); }
+
+/* Typography */
+.section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-text-gray;
+}
+
+.section-text-large {
+    @apply text-xl mb-6 max-w-4xl mx-auto leading-relaxed text-text-gray;
+}
+
+.section-text-arabic {
+    @apply text-lg max-w-4xl mx-auto arabic leading-relaxed text-text-gray;
+}
+
+.feature-title {
+    @apply text-2xl font-bold mb-4 text-text-gray;
+}
+
+.feature-text {
+    @apply mb-4 leading-relaxed text-text-gray;
+}
+
+.feature-text-arabic {
+    @apply arabic leading-relaxed text-text-gray;
+}
