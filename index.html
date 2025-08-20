@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteery - Connecting Hearts. Empowering Change.</title>
+    <title>Volunteery - Pour une Tunisie qui agit.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -195,21 +195,21 @@
                 Nous aimerions connaître votre avis ! Quel profil vous correspond le mieux ? </h2>
 
             <div class="flex flex-col md:flex-row gap-8 justify-center">
-                <!-- Card 1: Volunteers -->
+                <!-- Card 1: Vie associative -->
                 <div class="card bg-white border-2 border-red-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
                     onclick="expandCard(this)">
                     <div class="flex items-center gap-4 p-4 md:p-6">
                         <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-6.5-3.6M12 14l6.5-3.6" />
+                                d="M12 6a3 3 0 110-6 3 3 0 010 6zm6 9a3 3 0 110-6 3 3 0 010 6zm-12 0a3 3 0 110-6 3 3 0 010 6zm12 0v3a2 2 0 01-2 2H8a2 2 0 01-2-2v-3m12 0H6m6-9v3" />
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-red-500 flex-1">Associations, clubs et initiatives
+                        <h3 class="text-xl md:text-2xl font-bold text-red-500 flex-1">
+                            Vie Associative
                         </h3>
                         <span class="text-red-500 hidden md:inline transition-transform duration-300">▼</span>
                     </div>
                 </div>
-
-                <!-- Card 2: NGOs -->
+                <!-- Card 2: Etudiants -->
                 <div class="card bg-white border-2 border-blue-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
                     onclick="expandCard(this)">
                     <div class="flex items-center gap-4 p-4 md:p-6">
@@ -222,7 +222,7 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Sponsors -->
+                <!-- Card 3: Societe civile -->
                 <div class="card bg-white border-2 border-primary-green rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
                     onclick="expandCard(this)">
                     <div class="flex items-center gap-4 p-4 md:p-6">
@@ -230,34 +230,59 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM12 14c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z" />
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-primary-green flex-1">Acteurs actifs de la société
-                            civile</h3>
+                        <h3 class="text-xl md:text-2xl font-bold text-primary-green flex-1">
+                            Société Civile
+                        </h3>
                         <span class="text-primary-green hidden md:inline transition-transform duration-300">▼</span>
                     </div>
                 </div>
             </div>
         </div>
-
         <script>
             const COLLAPSED_HEIGHT = 100;
             const MAX_SCREEN_RATIO = 0.85;
 
-            // Card content data
+            // Card content data (updated with extracted content)
             const cardData = [
                 {
-                    title: "Associations, clubs et initiatives",
-                    text: "Appel aux associations, initiatives et clubs universitaires ! Rejoignez Volunteery, la première plateforme tunisienne dédiée au bénévolat en Tunisie et dans la région MENA.Pré-enregistrez-vous dès maintenant pour publier vos offres et mobiliser des volontaires motivés !",
-                    link: "https://example.com/survey-volunteers"
+                    title: "Vie Associative",
+                    text: `
+            <p>Représentez la première plateforme tunisienne 🇹🇳 de bénévolat dans votre université.</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Enregistrez clubs & associations étudiantes</li>
+                <li>Valorisez le bénévolat sur le campus</li>
+                <li>Connectez les étudiants aux opportunités</li>
+            </ul>
+            <p class="mt-4 font-semibold text-red-500">📌 Postulez avant le 30 septembre !</p>
+        `,
+                    link: "https://example.com/survey-students"
                 },
+
                 {
-                    title: "Étudiants universitaires",
-                    text: " Devenez Ambassadeur·rice Volunteery Vie Associative et représentez la première plateforme tunisienne de bénévolat dans votre université en enregistrant les clubs et associations étudiantes, en valorisant le bénévolat sur le campus et en connectant les étudiants aux opportunités.",
-                    link: "https://example.com/survey-ngos"
-                },
-                {
-                    title: "Acteurs actifs de la société civile",
-                    text: "Devenez Ambassadeur·rice Volunteery pour la société civile et rejoignez la première plateforme tunisienne de bénévolat en représentant votre gouvernorat, en enregistrant les associations et initiatives locales, en valorisant la culture du bénévolat et en connectant les acteurs du changement dans votre communauté",
-                    link: "https://example.com/survey-sponsors"
+                    title: "Étudiants Université",
+                    text: `
+            <p>Une opportunité unique pour les étudiants universitaires de développer leurs compétences et s'engager activement.</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Accédez à des opportunités de stage et projets de recherche</li>
+                <li>Participez à des ateliers et séminaires pour renforcer vos compétences</li>
+                <li>Collaborez avec des associations étudiantes et des entreprises</li>
+                <li>Valorisez vos initiatives et vos projets académiques</li>
+            </ul>
+            <p class="mt-4 font-semibold text-blue-600">📌 Postulez avant le 30 septembre !</p>
+        `,
+                    link: "https://example.com/survey-university"
+                }, {
+                    title: "Société Civile",
+                    text: `
+            <p>Rejoignez la première plateforme tunisienne 🇹🇳 de bénévolat comme ambassadeur·rice de votre gouvernorat.</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Enregistrez associations & initiatives locales</li>
+                <li>Valorisez la culture du bénévolat</li>
+                <li>Connectez les acteurs du changement dans votre communauté</li>
+            </ul>
+            <p class="mt-4 font-semibold text-primary-green">📌 Postulez avant le 30 septembre !</p>
+        `,
+                    link: "https://example.com/survey-civil"
                 }
             ];
 
@@ -270,7 +295,6 @@
                     const arrow = c.querySelector('span');
 
                     if (c !== card) {
-                        // Collapse other cards
                         c.style.height = COLLAPSED_HEIGHT + 'px';
                         if (content) content.remove();
                         if (arrow) arrow.style.transform = 'rotate(0deg)';
@@ -282,26 +306,26 @@
                 const isExpanded = !!existingContent;
 
                 if (isExpanded) {
-                    // Collapse
                     card.style.height = COLLAPSED_HEIGHT + 'px';
                     existingContent.remove();
                     if (arrow) arrow.style.transform = 'rotate(0deg)';
                 } else {
-                    // Inject content dynamically
                     const index = Array.from(cards).indexOf(card);
                     const data = cardData[index];
 
                     const contentDiv = document.createElement('div');
                     contentDiv.className = "content px-4 md:px-6 pb-4 md:pb-6 text-gray-700 transition-all duration-500";
                     contentDiv.innerHTML = `
-          <p class="mb-4 text-sm md:text-base">${data.text}</p>
-          <a href="${data.link}" target="_blank" class="text-blue-500 font-semibold hover:underline text-sm md:text-base">
-            Remplir le sondage
-          </a>
-        `;
+                    ${data.text}
+                    <a href="${data.link}" target="_blank"
+                    class="bg-gradient-to-r from-red-500 via-blue-500 to-green-400 bg-clip-text text-transparent font-semibold text-sm md:text-base mt-2 inline-block hover:underline underline-offset-2">
+                    Remplir le sondage
+                    <svg class="inline-block w-6 h-6 ml-1 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 5H5v2h11.586L4.293 19.293l1.414 1.414L18 8.414V19h2V5a1 1 0 00-1-1z"/>
+                    </svg>
+                    </a>`;
                     card.appendChild(contentDiv);
 
-                    // Use requestAnimationFrame to ensure DOM is updated before measuring
                     requestAnimationFrame(() => {
                         const contentHeight = contentDiv.scrollHeight;
                         let totalHeight = COLLAPSED_HEIGHT + contentHeight;
@@ -314,7 +338,6 @@
                 }
             }
 
-            // Initialize card heights
             document.addEventListener('DOMContentLoaded', () => {
                 document.querySelectorAll('.card').forEach(c => c.style.height = COLLAPSED_HEIGHT + 'px');
             });
@@ -492,7 +515,7 @@
 
             <!-- Launch Date -->
             <p class="text-lg md:text-xl mb-8 text-text-gray">
-                Lancement le <span id="launch-date" class="font-bold text-primary-red"></span>
+                Lancement Decembre <span id="launch-date" class="font-bold text-primary-red">Decembre</span>
             </p>
 
             <!-- Countdown Timer -->
@@ -517,7 +540,7 @@
         </div>
 
         <script>
-            const launchDate = new Date("September 1, 2025 00:00:00").getTime();
+            const launchDate = new Date("December 15, 2025 00:00:00").getTime();
 
             document.getElementById("launch-date").innerText = new Date(launchDate).toLocaleDateString('en-US', {
                 month: 'long',
