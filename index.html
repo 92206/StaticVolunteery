@@ -103,68 +103,57 @@
 <body class="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
     <!-- Hero Section -->
     <section class="relative overflow-hidden">
-        <div class="flex items-center justify-center px-2 py-8 hero-gradient min-h-[55vh]">
-            <div class="max-w-5xl mx-auto text-center relative z-10">
-                <!-- Decorative elements -->
-                <div class="absolute -top-16 -left-16 w-28 h-28 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-                <div class="absolute -bottom-16 -right-16 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-pulse"
+        <div class="flex items-center justify-center px-4 py-20 hero-gradient">
+            <div class="max-w-6xl mx-auto text-center relative z-10"> <!-- Decorative elements -->
+                <div class="absolute -top-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+                <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-white/10 rounded-full blur-3xl animate-pulse"
                     style="animation-delay: 2s;"></div>
-
-                <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 border-4 border-primary-red"
-                    style="box-shadow: 0 0 20px rgba(237, 57, 71, 0.25);">
-                    <!-- Logo -->
-                    <div class="flex items-center justify-center mb-6">
-                        <img src="./resources/volunteeryLogo.png" alt="Volunteery Logo"
-                            class="mx-auto aspect-square w-28 object-contain" />
-                    </div>
-
-                    <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-snug text-text-gray">
-                        Volunteery
+                <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 border-4 border-primary-red"
+                    style="box-shadow: 0 0 30px rgba(237, 57, 71, 0.3);"> <!-- Logo -->
+                    <div class="flex items-center justify-center mb-8"> <img src="./resources/volunteeryLogo.png"
+                            alt="Volunteery Logo" class="mx-auto aspect-square w-40 object-contain" /> </div>
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-text-gray"> Volunteery
                         <img src="./resources/tunisie.png" alt="Tunisia Flag"
-                            class="w-8 h-6 inline-block align-middle ml-2 rounded-[6px]" />
-                        <br />
-                        <span class="text-gradient">
-                            Pour une Tunisie qui agit.
-                        </span>
+                            class="w-10 h-8 inline-block align-middle ml-2 rounded-[7px] " /> <br /> <span
+                            class="text-gradient"> Pour une Tunisie qui agit. </span>
                     </h2>
-
-                    <p class="text-lg md:text-xl mb-5 max-w-3xl mx-auto leading-relaxed text-text-gray">
-                        La première plateforme tunisienne dédiée à la mise en relation des opportunités de bénévolat en
-                        Tunisie et dans la région MENA.
-                    </p>
-
-                    <button onclick="document.getElementById('actors').scrollIntoView({ behavior: 'smooth' })"
-                        class="bg-primary-red text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center border-2 border-white">
-                        Rejoindre la liste d'attente <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor"
+                    <p class="text-xl md:text-2xl mb-6 max-w-4xl mx-auto leading-relaxed text-text-gray"> La première
+                        plateforme tunisienne dédiée à la mise en relation des opportunités de bénévolat en Tunisie et
+                        dans la région MENA. </p> <button
+                        onclick="document.getElementById('actors').scrollIntoView({ behavior: 'smooth' })"
+                        class="bg-primary-red text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center border-2 border-white">
+                        Rejoignez-nous dès maintenant ! <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                             </path>
-                        </svg>
-                    </button>
+                        </svg> </button>
                 </div>
             </div>
         </div>
     </section>
-
+    </section>
     <!-- Features Section -->
     <section class="py-16 px-6 bg-gradient-to-b from-white via-blue-50 to-green-50">
-        <div class="max-w-6xl mx-auto text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
-                Ce que <span class="text-primary-red">Volunteery</span> a à offrir
-            </h2>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                Notre plateforme connecte les <span class="font-semibold text-primary-red">associations</span> et
-                les <span class="font-semibold text-primary-blue">jeunes bénévoles</span> pour créer un impact positif
-                en Tunisie.
-            </p>
-        </div>
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
+                    Ce que <span class="text-primary-red">Volunteery</span> a à offrir
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+                    Notre plateforme connecte les <span class="font-semibold text-primary-red">associations</span> et
+                    les <span class="font-semibold text-primary-blue">jeunes bénévoles</span> pour créer un impact
+                    positif
+                    en Tunisie.
+                </p>
+                <div class="step-indicator h-1 w-32 mx-auto rounded-full"></div>
+            </div>
 
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-10 lg:gap-14">
-
-                <!-- For Associations -->
-                <div
-                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-red text-left">
+            <!-- Features -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
+                <!-- Associations Feature -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent hover:border-red-300"
+                    data-target="associations" onclick="selectFeature(this)">
                     <div class="p-4 bg-primary-red rounded-xl inline-block mb-6">
                         <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
@@ -181,11 +170,15 @@
                         <li>Atteindre une communauté engagée</li>
                         <li>Suivre les candidatures et la participation</li>
                     </ul>
+                    <div class="mt-6 p-3 bg-red-50 rounded-lg border border-red-200">
+                        <p class="text-sm text-red-700 font-medium">👆 Cliquez ici si vous représentez une association
+                        </p>
+                    </div>
                 </div>
 
-                <!-- For Young People -->
-                <div
-                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-blue text-left">
+                <!-- Youth Feature -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent hover:border-blue-300"
+                    data-target="youth" onclick="selectFeature(this)">
                     <div class="p-4 bg-primary-blue rounded-xl inline-block mb-6">
                         <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
@@ -202,174 +195,297 @@
                         <li>Postuler en quelques clics</li>
                         <li>Développer de nouvelles compétences</li>
                     </ul>
+                    <div class="mt-6 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                        <p class="text-sm text-blue-700 font-medium">👆 Cliquez ici si vous êtes un jeune bénévole</p>
+                    </div>
                 </div>
-
             </div>
+
         </div>
+        <style>
+            .primary-red {
+                color: #ef4444;
+            }
+
+            .primary-blue {
+                color: #3b82f6;
+            }
+
+            .primary-green {
+                color: #10b981;
+            }
+
+            .bg-primary-red {
+                background-color: #ef4444;
+            }
+
+            .bg-primary-blue {
+                background-color: #3b82f6;
+            }
+
+            .text-primary-green {
+                color: #10b981;
+            }
+
+            .feature-card {
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            .feature-card:hover {
+                transform: translateY(-4px);
+            }
+
+            .feature-card.active {
+                border-width: 3px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
+
+            .card {
+                transition: height 0.4s ease, box-shadow 0.3s ease;
+            }
+
+            .primary-card {
+                transform: scale(1.05);
+            }
+
+            .step-indicator {
+                background: linear-gradient(90deg, #ef4444, #3b82f6, #10b981);
+                background-size: 200% 100%;
+                animation: shimmer 3s ease-in-out infinite;
+            }
+
+            @keyframes shimmer {
+
+                0%,
+                100% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+            }
+        </style>
     </section>
-
-
-    <!-- Stakeholders Section -->
     <section id="actors" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12 text-gray-800">
-                Nous aimerions connaître votre avis ! Quel profil vous correspond le mieux ? </h2>
+                Choisissez votre opportunité ! Rejoignez Volunteery et découvrez le rôle qui vous correspond le mieux
+            </h2>
 
-            <div class="flex flex-col md:flex-row gap-8 justify-center">
-                <!-- Card 1: Vie associative -->
-                <div class="card bg-white border-2 border-red-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
-                    onclick="expandCard(this)">
+            <!-- Cards Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+
+                <!-- Associations (red - full row on desktop) -->
+                <div class="card bg-white border-2 border-red-500 rounded-3xl shadow-lg cursor-pointer 
+      transition-all duration-500 overflow-hidden hover:scale-105 hover:shadow-xl 
+      w-full md:col-span-2 max-w-2xl" onclick="expandCard(this)">
                     <div class="flex items-center gap-4 p-4 md:p-6">
                         <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 6a3 3 0 110-6 3 3 0 010 6zm6 9a3 3 0 110-6 3 3 0 010 6zm-12 0a3 3 0 110-6 3 3 0 010 6zm12 0v3a2 2 0 01-2 2H8a2 2 0 01-2-2v-3m12 0H6m6-9v3" />
                         </svg>
                         <h3 class="text-xl md:text-2xl font-bold text-red-500 flex-1">
-                            Vie Associative
+                            Associations, clubs et initiatives
                         </h3>
                         <span class="text-red-500 hidden md:inline transition-transform duration-300">▼</span>
                     </div>
                 </div>
-                <!-- Card 2: Etudiants -->
-                <div class="card bg-white border-2 border-blue-500 rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
-                    onclick="expandCard(this)">
-                    <div class="flex items-center gap-4 p-4 md:p-6">
-                        <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                <!-- Étudiants -->
+                <div class="card bg-white border-2 border-blue-500 rounded-3xl shadow-lg cursor-pointer 
+      transition-all duration-500 overflow-hidden hover:scale-105 hover:shadow-xl 
+      w-full max-w-lg" onclick="expandCard(this)">
+                    <div class="flex items-start gap-4 p-4 md:p-6">
+                        <svg class="w-8 h-8 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-6.5-3.6M12 14l6.5-3.6" />
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-blue-500 flex-1">Étudiants universitaires</h3>
-                        <span class="text-blue-500 hidden md:inline transition-transform duration-300">▼</span>
+                        <h3 class="text-xl md:text-2xl font-bold text-blue-500 flex-1 whitespace-normal break-words">
+                            Ambassadeur·rice Volunteery dans votre université
+                        </h3>
+                        <span
+                            class="text-blue-500 hidden md:inline transition-transform duration-300 flex-shrink-0">▼</span>
                     </div>
                 </div>
 
-                <!-- Card 3: Societe civile -->
-                <div class="card bg-white border-2 border-primary-green rounded-3xl shadow-lg cursor-pointer transition-all duration-500 flex-1 overflow-hidden hover:scale-105 hover:shadow-xl"
-                    onclick="expandCard(this)">
-                    <div class="flex items-center gap-4 p-4 md:p-6">
-                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Société Civile -->
+                <div class="card bg-white border-2 border-green-500 rounded-3xl shadow-lg cursor-pointer 
+      transition-all duration-500 overflow-hidden hover:scale-105 hover:shadow-xl 
+      w-full max-w-lg" onclick="expandCard(this)">
+                    <div class="flex items-start gap-4 p-4 md:p-6">
+                        <svg class="w-8 h-8 text-green-500 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM12 14c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z" />
                         </svg>
-                        <h3 class="text-xl md:text-2xl font-bold text-primary-green flex-1">
-                            Société Civile
+                        <h3 class="text-xl md:text-2xl font-bold text-green-500 flex-1 whitespace-normal break-words">
+                            Ambassadeur·rice Volunteery dans votre gouvernorat
                         </h3>
-                        <span class="text-primary-green hidden md:inline transition-transform duration-300">▼</span>
+                        <span
+                            class="text-green-500 hidden md:inline transition-transform duration-300 flex-shrink-0">▼</span>
                     </div>
                 </div>
+
             </div>
         </div>
-        <script>
-            const COLLAPSED_HEIGHT = 100;
-            const MAX_SCREEN_RATIO = 0.85;
+        </div>
+        </div>
 
-            // Card content data (updated with extracted content)
-            const cardData = [
-                {
-                    title: "Vie Associative",
-                    text: `
-            <p>Représentez la première plateforme tunisienne 🇹🇳 de bénévolat dans votre université.</p>
-            <ul class="list-disc pl-6 space-y-2">
-                <li>Enregistrez clubs & associations étudiantes</li>
-                <li>Valorisez le bénévolat sur le campus</li>
-                <li>Connectez les étudiants aux opportunités</li>
-            </ul>
-            <p class="mt-4 font-semibold text-red-500">📌 Postulez avant le 30 septembre !</p>
-        `,
-                    link: "https://example.com/survey-students"
-                },
 
-                {
-                    title: "Étudiants Université",
-                    text: `
-            <p>Une opportunité unique pour les étudiants universitaires de développer leurs compétences et s'engager activement.</p>
-            <ul class="list-disc pl-6 space-y-2">
-                <li>Accédez à des opportunités de stage et projets de recherche</li>
-                <li>Participez à des ateliers et séminaires pour renforcer vos compétences</li>
-                <li>Collaborez avec des associations étudiantes et des entreprises</li>
-                <li>Valorisez vos initiatives et vos projets académiques</li>
-            </ul>
-            <p class="mt-4 font-semibold text-blue-600">📌 Postulez avant le 30 septembre !</p>
-        `,
-                    link: "https://example.com/survey-university"
-                }, {
-                    title: "Société Civile",
-                    text: `
-            <p>Rejoignez la première plateforme tunisienne 🇹🇳 de bénévolat comme ambassadeur·rice de votre gouvernorat.</p>
-            <ul class="list-disc pl-6 space-y-2">
-                <li>Enregistrez associations & initiatives locales</li>
-                <li>Valorisez la culture du bénévolat</li>
-                <li>Connectez les acteurs du changement dans votre communauté</li>
-            </ul>
-            <p class="mt-4 font-semibold text-primary-green">📌 Postulez avant le 30 septembre !</p>
-        `,
-                    link: "https://example.com/survey-civil"
-                }
-            ];
-
-            function expandCard(card) {
-                const cards = document.querySelectorAll('.card');
-                const viewportHeight = window.innerHeight;
-
-                cards.forEach((c, index) => {
-                    const content = c.querySelector('.content');
-                    const arrow = c.querySelector('span');
-
-                    if (c !== card) {
-                        c.style.height = COLLAPSED_HEIGHT + 'px';
-                        if (content) content.remove();
-                        if (arrow) arrow.style.transform = 'rotate(0deg)';
-                    }
-                });
-
-                const arrow = card.querySelector('span');
-                const existingContent = card.querySelector('.content');
-                const isExpanded = !!existingContent;
-
-                if (isExpanded) {
-                    card.style.height = COLLAPSED_HEIGHT + 'px';
-                    existingContent.remove();
-                    if (arrow) arrow.style.transform = 'rotate(0deg)';
-                } else {
-                    const index = Array.from(cards).indexOf(card);
-                    const data = cardData[index];
-
-                    const contentDiv = document.createElement('div');
-                    contentDiv.className = "content px-4 md:px-6 pb-4 md:pb-6 text-gray-700 transition-all duration-500";
-                    contentDiv.innerHTML = `
-                    ${data.text}
-                    <a href="${data.link}" target="_blank"
-                    class="bg-gradient-to-r from-red-500 via-blue-500 to-green-400 bg-clip-text text-transparent font-semibold text-sm md:text-base mt-2 inline-block hover:underline underline-offset-2">
-                    Remplir le sondage
-                    <svg class="inline-block w-6 h-6 ml-1 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 5H5v2h11.586L4.293 19.293l1.414 1.414L18 8.414V19h2V5a1 1 0 00-1-1z"/>
-                    </svg>
-                    </a>`;
-                    card.appendChild(contentDiv);
-
-                    requestAnimationFrame(() => {
-                        const contentHeight = contentDiv.scrollHeight;
-                        let totalHeight = COLLAPSED_HEIGHT + contentHeight;
-                        if (totalHeight > viewportHeight * MAX_SCREEN_RATIO) {
-                            totalHeight = viewportHeight * MAX_SCREEN_RATIO;
-                        }
-                        card.style.height = totalHeight + 'px';
-                        if (arrow) arrow.style.transform = 'rotate(180deg)';
-                    });
-                }
-            }
-
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelectorAll('.card').forEach(c => c.style.height = COLLAPSED_HEIGHT + 'px');
-            });
-        </script>
-
-        <style>
-            .card {
-                transition: height 0.5s ease-in-out;
-            }
-        </style>
     </section>
+
+
+    <script>
+        const COLLAPSED_HEIGHT = 100;
+        const MAX_SCREEN_RATIO = 0.85;
+        function selectFeature(card) {
+            // reset feature highlights
+            document.querySelectorAll('.feature-card').forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+
+            const target = card.dataset.target;
+
+            if (target === 'associations') {
+                const cardToExpand = [...document.querySelectorAll('#actors .card')]
+                    .find(c => c.querySelector('h3').textContent.includes('Associations'));
+                if (cardToExpand) {
+                    cardToExpand.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    expandCard(cardToExpand, false); // accordion mode
+                }
+
+            } else if (target === 'youth') {
+                const youthCards = [...document.querySelectorAll('#actors .card')]
+                    .filter(c =>
+                        c.querySelector('h3').textContent.includes('université') ||
+                        c.querySelector('h3').textContent.includes('gouvernorat')
+                    );
+
+                if (youthCards.length) {
+                    youthCards[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // expand both, but collapse others first
+                    document.querySelectorAll('#actors .card').forEach(c => {
+                        if (!youthCards.includes(c)) collapseCard(c);
+                    });
+                    youthCards.forEach(c => expandCard(c, true)); // force both open
+                }
+            }
+        }
+
+
+        function collapseCard(card) {
+            const content = card.querySelector('.content');
+            const arrow = card.querySelector('span:last-child');
+            if (content) content.remove();
+            card.style.height = COLLAPSED_HEIGHT + 'px';
+            if (arrow) arrow.style.transform = 'rotate(0deg)';
+        }
+
+        function expandCard(card, allowMultiple = false) {
+            const parentGroup = card.closest('.actor-group');
+            const cards = parentGroup ? parentGroup.querySelectorAll('.card') : document.querySelectorAll('.card');
+            const viewportHeight = window.innerHeight;
+
+            if (!allowMultiple) {
+                // Collapse others in same group
+                cards.forEach(c => {
+                    if (c !== card) collapseCard(c);
+                });
+            }
+
+            const arrow = card.querySelector('span:last-child');
+            const existingContent = card.querySelector('.content');
+            const isExpanded = !!existingContent;
+
+            if (isExpanded) {
+                collapseCard(card);
+            } else {
+                const data = getCardData(card);
+                const div = document.createElement('div');
+                div.className = "content px-4 md:px-6 pb-4 md:pb-6 overflow-hidden text-gray-700 transition-all duration-500 ease-in-out";
+                div.innerHTML = data.text;
+                card.appendChild(div);
+
+                requestAnimationFrame(() => {
+                    const contentHeight = div.scrollHeight;
+                    let totalHeight = COLLAPSED_HEIGHT + contentHeight;
+                    if (totalHeight > viewportHeight * MAX_SCREEN_RATIO) {
+                        totalHeight = viewportHeight * MAX_SCREEN_RATIO;
+                    }
+                    card.style.height = totalHeight + 'px';
+                    if (arrow) arrow.style.transform = 'rotate(180deg)';
+                });
+            }
+        }
+
+
+
+        // --- Card content based on title ---
+        function getCardData(card) {
+            const title = card.querySelector('h3').textContent.trim();
+
+            if (title.includes('Associations')) {
+                return {
+                    text: `
+            <div class="expand-content">
+                <p>Appel à toutes les associations, initiatives et clubs universitaires tunisiens !</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Publiez vos offres de bénévolat et connectez-vous avec des volontaires motivés prêts à agir</li>
+                    <li>Créez, collaborez et impactez votre communauté dès maintenant !</li>
+                </ul>
+                <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+                    Pré-inscription
+                </button>
+            </div>
+            `
+                };
+            } else if (title.includes('université')) {
+                return {
+                    text: `
+            <div class="expand-content">
+                <p>Devenez Ambassadeur·rice Volunteery dans votre université ! 
+                Représentez la première plateforme tunisienne de bénévolat.</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Enregistrez clubs & associations étudiantes</li>
+                    <li>Le bénévolat sur le campus</li>
+                    <li>Connectez les étudiants aux opportunités</li>
+                </ul>
+                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+                    Pré-inscription
+                </button>
+            </div>
+            `
+                };
+            } else if (title.includes('gouvernorat')) {
+                return {
+                    text: `
+            <div class="expand-content">
+                <p>Devenez Ambassadeur·rice Volunteery dans votre gouvernorat !</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Enregistrez associations & initiatives locales</li>
+                    <li>Valorisez la culture du bénévolat</li>
+                    <li>Connectez les acteurs du changement dans votre communauté</li>
+                </ul>
+                <button class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                    Pré-inscription
+                </button>
+            </div>
+            `
+                };
+            } else {
+                return { text: "<div class='expand-content'><p>Aucune donnée trouvée.</p></div>" };
+            }
+        }
+
+
+        // --- Initialize collapsed state ---
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.card').forEach(c => c.style.height = COLLAPSED_HEIGHT + 'px');
+        });
+    </script>
+
 
     <!-- Section for carousel  -->
     <section class="py-20 px-4 bg-white">
@@ -432,10 +548,16 @@
                 let set = [];
                 for (let i = 0; i < visibleImages; i++) {
                     const imgIdx = (startIdx + i) % images.length;
-                    set.push(`<img src="${images[imgIdx]}" class="w-[500px] md:w-[400px] h-[300px] object-cover shadow-xl" alt="Carousel ${imgIdx + 1}">`);
+                    set.push(`
+            <div class="flex justify-center items-center w-full max-w-[600px] bg-gray-200 shadow-xl rounded-xl overflow-hidden">
+                <img src="${images[imgIdx]}" class="w-full h-auto object-contain" alt="Carousel ${imgIdx + 1}">
+            </div>
+        `);
                 }
                 return set.join('');
             }
+
+
 
             function updateDots() {
                 const dotIndex = Math.floor(currentIndex / visibleImages) % Math.ceil(images.length / visibleImages);
@@ -517,7 +639,7 @@
             setInterval(() => {
                 if (isSliding) return;
                 showImages(currentIndex, 1);
-            }, 5000);
+            }, 8000);
 
             showImages(currentIndex);
         </script>
