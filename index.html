@@ -103,41 +103,40 @@
 <body class="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
     <!-- Hero Section -->
     <section class="relative overflow-hidden">
-        <div class="min-h-screen flex items-center justify-center px-4 py-20 hero-gradient">
-            <div class="max-w-6xl mx-auto text-center relative z-10">
+        <div class="flex items-center justify-center px-2 py-8 hero-gradient min-h-[55vh]">
+            <div class="max-w-5xl mx-auto text-center relative z-10">
                 <!-- Decorative elements -->
-                <div class="absolute -top-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-                <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-white/10 rounded-full blur-3xl animate-pulse"
+                <div class="absolute -top-16 -left-16 w-28 h-28 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+                <div class="absolute -bottom-16 -right-16 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-pulse"
                     style="animation-delay: 2s;"></div>
 
-                <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 border-4 border-primary-red"
-                    style="box-shadow: 0 0 30px rgba(237, 57, 71, 0.3);">
+                <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 border-4 border-primary-red"
+                    style="box-shadow: 0 0 20px rgba(237, 57, 71, 0.25);">
                     <!-- Logo -->
-                    <div class="flex items-center justify-center mb-8">
+                    <div class="flex items-center justify-center mb-6">
                         <img src="./resources/volunteeryLogo.png" alt="Volunteery Logo"
-                            class="mx-auto aspect-square w-40 object-contain" />
-
+                            class="mx-auto aspect-square w-28 object-contain" />
                     </div>
 
-                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-text-gray">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-snug text-text-gray">
                         Volunteery
                         <img src="./resources/tunisie.png" alt="Tunisia Flag"
-                            class="w-10 h-8 inline-block align-middle ml-2 rounded-[7px] " />
+                            class="w-8 h-6 inline-block align-middle ml-2 rounded-[6px]" />
                         <br />
                         <span class="text-gradient">
                             Pour une Tunisie qui agit.
                         </span>
                     </h2>
 
-
-                    <p class="text-xl md:text-2xl mb-6 max-w-4xl mx-auto leading-relaxed text-text-gray">
+                    <p class="text-lg md:text-xl mb-5 max-w-3xl mx-auto leading-relaxed text-text-gray">
                         La première plateforme tunisienne dédiée à la mise en relation des opportunités de bénévolat en
-                        Tunisie et dans la région MENA. </p>
+                        Tunisie et dans la région MENA.
+                    </p>
 
                     <button onclick="document.getElementById('actors').scrollIntoView({ behavior: 'smooth' })"
-                        class="bg-primary-red text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center border-2 border-white">
-                        Join the Waitlist
-                        <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="bg-primary-red text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center border-2 border-white">
+                        Rejoindre la liste d'attente <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                             </path>
                         </svg>
@@ -148,45 +147,67 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 px-4 bg-gradient-to-r from-blue-50 to-green-50">
+    <section class="py-16 px-6 bg-gradient-to-b from-white via-blue-50 to-green-50">
+        <div class="max-w-6xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
+                Ce que <span class="text-primary-red">Volunteery</span> a à offrir
+            </h2>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Notre plateforme connecte les <span class="font-semibold text-primary-red">associations</span> et
+                les <span class="font-semibold text-primary-blue">jeunes bénévoles</span> pour créer un impact positif
+                en Tunisie.
+            </p>
+        </div>
+
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+            <div class="grid md:grid-cols-2 gap-10 lg:gap-14">
+
                 <!-- For Associations -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-red">
-                    <div class="p-4 bg-primary-red rounded-2xl inline-block mb-6">
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-red text-left">
+                    <div class="p-4 bg-primary-red rounded-xl inline-block mb-6">
                         <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 6a3 3 0 110-6 3 3 0 010 6zm6 9a3 3 0 110-6 3 3 0 010 6zm-12 0a3 3 0 110-6 3 3 0 010 6zm12 0v3a2 2 0 01-2 2H8a2 2 0 01-2-2v-3m12 0H6m6-9v3" />
                         </svg>
-
                     </div>
-                    <h4 class="text-2xl font-bold mb-4 text-text-gray">Pour les Associations et Clubs</h4>
-                    <p class="mb-4 leading-relaxed text-text-gray">
-                        Associations, initiatives et clubs universitaires peuvent partager leurs offres de bénévolat,
-                        atteignant ainsi des personnes motivées prêtes à passer à l'action. </p>
+                    <h4 class="text-2xl font-bold mb-3 text-gray-800">Pour les Associations et Clubs</h4>
+                    <p class="leading-relaxed text-gray-600 mb-4">
+                        Donnez plus de visibilité à vos initiatives et recrutez facilement des bénévoles motivés.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 text-base list-disc list-inside">
+                        <li>Publier des offres de bénévolat</li>
+                        <li>Atteindre une communauté engagée</li>
+                        <li>Suivre les candidatures et la participation</li>
+                    </ul>
                 </div>
 
                 <!-- For Young People -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-blue">
-                    <div class="p-4 bg-primary-blue rounded-2xl inline-block mb-6">
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border-t-4 border-primary-blue text-left">
+                    <div class="p-4 bg-primary-blue rounded-xl inline-block mb-6">
                         <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-6.5-3.6M12 14l6.5-3.6" />
                         </svg>
-
                     </div>
-                    <h4 class="text-2xl font-bold mb-4 text-text-gray">Pour les jeunes</h4>
-                    <p class="mb-4 leading-relaxed text-text-gray">
-                        Les jeunes peuvent découvrir, postuler et participer à des causes qui leur tiennent à cœur. </p>
-
+                    <h4 class="text-2xl font-bold mb-3 text-gray-800">Pour les jeunes</h4>
+                    <p class="leading-relaxed text-gray-600 mb-4">
+                        Trouvez facilement des missions de bénévolat qui correspondent à vos passions et disponibilités.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 text-base list-disc list-inside">
+                        <li>Découvrir des opportunités locales</li>
+                        <li>Postuler en quelques clics</li>
+                        <li>Développer de nouvelles compétences</li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- Stakeholders Section -->
     <section id="actors" class="py-20 bg-gray-50">
@@ -502,6 +523,71 @@
         </script>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-text-gray mb-4">Notre Equipe</h2>
+            <p class="text-gray-500">Rencontrez notre équipe passionnée.</p>
+        </div>
+
+        <!-- Gallery Container -->
+        <div id="gallery" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <!-- First row of images (fully visible) -->
+            <div class="overflow-hidden rounded-2xl relative group">
+                <img src="./resources/team/team1.jpeg" alt="Gallery Image 1"
+                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+
+            <div class="overflow-hidden rounded-2xl relative group">
+                <img src="./resources/team/team2.jpeg" alt="Gallery Image 2"
+                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+
+            <div class="overflow-hidden rounded-2xl relative group">
+                <img src="./resources/team/team3.jpeg" alt="Gallery Image 3"
+                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+        </div>
+
+        <!-- Show All Button -->
+        <div class="mt-8 text-center relative">
+            <button id="showAllBtn"
+                class="px-6 py-2 bg-primary-red text-white rounded-full hover:bg-red-600 transition-colors duration-300">
+                Afficher toutes les photos de l'équipe </button>
+        </div>
+
+        <script>
+            const showAllBtn = document.getElementById('showAllBtn');
+            const gallery = document.getElementById('gallery');
+
+            const extraImages = [
+                "./resources/team/team4.jpeg", "./resources/team/team5.jpeg", "./resources/team/team6.jpeg",
+                "./resources/team/team7.jpeg", "./resources/team/team8.jpeg", "./resources/team/team9.jpeg",
+                "./resources/team/team10.jpeg", "./resources/team/team11.jpeg"
+            ];
+
+            showAllBtn.addEventListener('click', () => {
+                extraImages.forEach(src => {
+                    const div = document.createElement('div');
+                    div.className = 'overflow-hidden rounded-2xl relative group opacity-0 transition-opacity duration-500';
+
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = 'Gallery Image';
+                    img.className = 'w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105';
+
+                    div.appendChild(img);
+                    gallery.appendChild(div);
+
+                    // Fade-in effect
+                    setTimeout(() => div.classList.remove('opacity-0'), 50);
+                });
+
+                showAllBtn.style.display = 'none'; // hide the button
+            });
+        </script>
+    </section>
 
     <!-- Coming Soon Section -->
     <section class="py-20 px-4 bg-gradient-to-br from-red-50 to-blue-50 relative overflow-hidden">
@@ -625,72 +711,6 @@
             }
         </style>
     </section>
-
-    <!-- Gallery Section -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-text-gray mb-4">Notre Equipe</h2>
-            <p class="text-gray-500">Rencontrez notre équipe passionnée.</p>
-        </div>
-
-        <!-- Gallery Container -->
-        <div id="gallery" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-            <!-- First row of images (fully visible) -->
-            <div class="overflow-hidden rounded-2xl relative group">
-                <img src="./resources/team/team1.jpeg" alt="Gallery Image 1"
-                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
-            </div>
-
-            <div class="overflow-hidden rounded-2xl relative group">
-                <img src="./resources/team/team2.jpeg" alt="Gallery Image 2"
-                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
-            </div>
-
-            <div class="overflow-hidden rounded-2xl relative group">
-                <img src="./resources/team/team3.jpeg" alt="Gallery Image 3"
-                    class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
-            </div>
-        </div>
-
-        <!-- Show All Button -->
-        <div class="mt-8 text-center relative">
-            <button id="showAllBtn"
-                class="px-6 py-2 bg-primary-red text-white rounded-full hover:bg-red-600 transition-colors duration-300">
-                Afficher toutes les photos de l'équipe </button>
-        </div>
-    </section>
-
-    <script>
-        const showAllBtn = document.getElementById('showAllBtn');
-        const gallery = document.getElementById('gallery');
-
-        const extraImages = [
-            "./resources/team/team4.jpeg", "./resources/team/team5.jpeg", "./resources/team/team6.jpeg",
-            "./resources/team/team7.jpeg", "./resources/team/team8.jpeg", "./resources/team/team9.jpeg",
-            "./resources/team/team10.jpeg", "./resources/team/team11.jpeg"
-        ];
-
-        showAllBtn.addEventListener('click', () => {
-            extraImages.forEach(src => {
-                const div = document.createElement('div');
-                div.className = 'overflow-hidden rounded-2xl relative group opacity-0 transition-opacity duration-500';
-
-                const img = document.createElement('img');
-                img.src = src;
-                img.alt = 'Gallery Image';
-                img.className = 'w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105';
-
-                div.appendChild(img);
-                gallery.appendChild(div);
-
-                // Fade-in effect
-                setTimeout(() => div.classList.remove('opacity-0'), 50);
-            });
-
-            showAllBtn.style.display = 'none'; // hide the button
-        });
-    </script>
 
     <!-- Footer -->
     <footer class="relative text-white py-16 px-4 overflow-hidden bg-text-gray">
